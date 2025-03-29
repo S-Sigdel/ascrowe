@@ -1,3 +1,3 @@
-./vault-controller/node_modules
+vault-controller/node_modules
 *.env
-./vault-controller/.env
+vault-controller/.env
