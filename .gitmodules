@@ -1,0 +1,3 @@
+[submodule "reasoning"]
+	path = reasoning
+	url = https://github.com/S-Sigdel/godAI
