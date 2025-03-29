@@ -1,5 +1,5 @@
 require("dotenv").config();
-const Web3 = require("web3");
+const { Web3 } = require("web3"); // Destructure Web3 from the package
 
 const web3 = new Web3("https://sepolia.infura.io/v3/c95289ab5d0f4ecd8eda1a8dadd607fb"); // Replace with your Infura or other RPC URL
 const contractAddress = "0x4b44BaEe14EeA7FdEd51A1FB90D65E1FEC696751"; // Replace with actual contract address
