@@ -1,3 +1,6 @@
 [submodule "reasoning"]
 	path = reasoning
 	url = https://github.com/S-Sigdel/godAI
+[submodule "minter_verbwire"]
+	path = minter_verbwire
+	url = https://github.com/verbwire/fastMint
