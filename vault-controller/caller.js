@@ -19,11 +19,18 @@ const contract = new web3.eth.Contract(contractABI, contractAddress);
 
 async function sendTransaction(functionCall) {
   const account = web3.eth.accounts.privateKeyToAccount(privateKey);
+
+  // Get necessary transaction parameters
   const tx = {
+    from: account.address,  
     to: contractAddress,
-    gas: 200000,
     data: functionCall,
+    gas: 200000,
+    chainId: 11155111,  // Sepolia chain ID
+    nonce: await web3.eth.getTransactionCount(account.address, "pending"),
+    gasPrice: await web3.eth.getGasPrice()
   };
+
   const signedTx = await account.signTransaction(tx);
   const receipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
   console.log("Transaction Hash:", receipt.transactionHash);
