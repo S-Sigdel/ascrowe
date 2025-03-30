@@ -4,3 +4,6 @@
 [submodule "minter_verbwire"]
 	path = minter_verbwire
 	url = https://github.com/verbwire/fastMint
+[submodule "acroswe-frontend"]
+	path = acroswe-frontend
+	url = https://github.com/S-Sigdel/acroswe-frontend
