@@ -7,3 +7,6 @@
 [submodule "acroswe-frontend"]
 	path = acroswe-frontend
 	url = https://github.com/S-Sigdel/acroswe-frontend
+[submodule "HousePricePredictionModel"]
+	path = HousePricePredictionModel
+	url = https://github.com/S-Sigdel/HousePricePredictionModel
